@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1)), url(spaghetti-1932466_640.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   filter: brightness(80%);
+}
+
+nav{
+    background-color: rgba(0,0,0,0.5);
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 7%;
+    height: auto;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.logo img:hover{
+    
+    transition: color 0.3s ease;
+    transform: scale(1.08);
+   
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+
+}
+nav ul li a:hover{
+    color: #fff;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+    padding: 10px 20px;
+    background-color: #45a049;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+.hero{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hero p{
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgb(238, 247, 236);
+    margin-top: 20px;
+}
+.hero button{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.hero button:hover{
+    background-color: #45a049;
+    transition: background-color 0.5s ease;
+    color: white;
+    transform: scale(1.05);
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: lawngreen;
+    cursor: pointer;
+
+}
+/* Media Queries */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .logo img {
+        width: 15%;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero button {
+        font-size: 1rem;
+    }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+    .logo img {
+        width: 12%;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        margin-right: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero button {
+        font-size: 1.2rem;
+    }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 900px) {
+    .logo img {
+        width: 7%;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem;
+        margin-right: 40px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero button {
+        font-size: 1.3rem;
+    }
+}
